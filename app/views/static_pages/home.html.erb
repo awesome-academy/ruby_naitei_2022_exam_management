@@ -1,8 +1,25 @@
 <% provide(:title, t(".heading")) %>
-<div class="center jumbotron">
-  <h1><%= t(".welcome") %></h1>
-  <h2>
-    <%= t(".intro") %>
-  </h2>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+<% if logged_in? %>
+  <div>
+    <% if @subject.any? %>
+      <div>
+        <form class="form-inline">
+          <%= select_tag "subject_id", options_for_select(@subject.collect{ |subject| [subject.name, subject.id]}),  {:class => "form-control custom-select"} %>
+          <button type="submit" class="btn btn-primary"><%= t(".create_exam") %></button>
+        </form>
+      </div>
+    <% end %>
+    <hr>
+    <div>
+      <%# table here ... do later %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t(".welcome") %></h1> 
+    <h2>
+      <%= t(".intro") %>
+    </h2>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>

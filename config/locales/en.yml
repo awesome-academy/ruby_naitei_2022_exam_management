@@ -18,6 +18,16 @@ en:
       welcome: "Welcome to Maxe"
       intro: "The exam management"
       signup: "Sign up now!"
+      create_exam: "Create Exam"
+  subjects:
+    index:
+      title: "All subjects"
+      name: "Subject name"
+      ques_num: "Question number"
+      duration: "Duration(min)"
+      score_pass: "Score to pass"
+      description: "Description"
+      no_subject: "No subject yet"
   sessions:
     new:
       login: "Login"

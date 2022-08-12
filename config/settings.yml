@@ -1,5 +1,6 @@
 email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 min_length: 10
+pagy: 10
 max_length: 30
 password_min_length: 6
 paginate:

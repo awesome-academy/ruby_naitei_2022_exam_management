@@ -19,6 +19,16 @@ vi:
       welcome: "Chào mừng đến với Maxe"
       intro: "Hệ thống quản lý kỳ thi"
       signup: "Đăng ký ngay"
+      create_exam: "Tạo bài thi"
+  subjects:
+    index:
+      title: "Tất cả môn học"
+      name: "Tên môn học"
+      ques_num: "Số câu hỏi"
+      duration: "Thời gian(phút)"
+      score_pass: "Điểm đạt"
+      description: "Mô tả"
+      no_subject: "Chưa có môn học"
   sessions:
     new:
       login: "Đăng nhập"

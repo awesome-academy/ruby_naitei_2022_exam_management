@@ -1,4 +1,5 @@
 module ApplicationHelper
+  include Pagy::Frontend
   # rubocop:disable Rails/OutputSafety
   def toastr_flash
     flash.each_with_object([]) do |(type, message), flash_messages|
